@@ -219,10 +219,12 @@ const isInstantDelivery = computed(() => {
 >                    {{ isInstantDelivery ? '🚚 Instant Delivery (Within 2–3 hrs)' : product.shippingInformation }}
 </span>
             </div>
-            <div class="flex items-center gap-1.5">
-              <span class="text-stone-400 dark:text-stone-500">Warranty:</span>
-              <span class="font-semibold text-stone-600 dark:text-stone-300">{{ product.warrantyInformation }}</span>
-            </div>
+          <div class="flex items-center gap-1.5">
+                   <span class="text-stone-400 dark:text-stone-500">Freshness:</span>
+                   <span class="font-semibold text-emerald-600">
+                            Guaranteed Fresh 🌿
+                        </span>
+          </div> 
             <div class="flex items-center gap-1.5">
               <span class="text-stone-400 dark:text-stone-500">Returns:</span>
               <span class="font-semibold text-stone-600 dark:text-stone-300">{{ product.returnPolicy }}</span>
