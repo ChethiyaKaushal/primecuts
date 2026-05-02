@@ -43,7 +43,7 @@ async function handleSubmit(): Promise<void> {
           <div class="inline-flex w-16 h-16 items-center justify-center bg-crimson-700 rounded-2xl shadow-lg mb-4">
             <span class="text-3xl">🥩</span>
           </div>
-          <h1 class="font-display text-3xl font-black text-stone-900 dark:text-white">Welcome Back</h1>
+          <h1 class="font-display text-3xl font-black text-stone-900 dark:text-white"> Welcome Back </h1>
           <p class="text-stone-500 dark:text-stone-400 text-sm mt-1.5">Sign in to your Prime Cuts account</p>
         </div>
 

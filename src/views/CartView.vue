@@ -37,7 +37,7 @@ const SHIPPING_THRESHOLD = 50
       <div class="w-24 h-24 bg-stone-100 dark:bg-stone-800 rounded-full flex items-center justify-center text-5xl">
         🛒
       </div>
-      <h2 class="font-display text-2xl font-bold text-stone-700 dark:text-stone-200">Your cart is empty</h2>
+      <h2 class="font-display text-2xl font-bold text-stone-700 dark:text-stone-200">Your Cart is empty</h2>
       <p class="text-stone-500 dark:text-stone-400 text-center max-w-xs">
         Looks like you haven't added any products yet. Start exploring our premium selection!
       </p>
