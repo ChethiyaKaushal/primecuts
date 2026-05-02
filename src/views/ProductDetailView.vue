@@ -69,6 +69,12 @@ function handleAddToCart(): void {
   addedFeedback.value = true
   setTimeout(() => { addedFeedback.value = false }, 2000)
 }
+const isInstantDelivery = computed(() => {
+  if (!product.value) return false
+
+  // 🚚 grocery = instant delivery
+  return product.value.category === 'groceries'
+})
 </script>
 
 <template>
@@ -208,7 +214,10 @@ function handleAddToCart(): void {
             </div>
             <div class="flex items-center gap-1.5">
               <span class="text-stone-400 dark:text-stone-500">Ships:</span>
-              <span class="font-semibold text-stone-600 dark:text-stone-300">{{ product.shippingInformation }}</span>
+              <span
+                    :class="isInstantDelivery ? 'text-emerald-600 font-bold' : 'text-stone-600'"
+>                    {{ isInstantDelivery ? '🚚 Instant Delivery (Within 2–3 hrs)' : product.shippingInformation }}
+</span>
             </div>
             <div class="flex items-center gap-1.5">
               <span class="text-stone-400 dark:text-stone-500">Warranty:</span>
