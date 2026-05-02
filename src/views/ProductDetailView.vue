@@ -227,7 +227,7 @@ const isInstantDelivery = computed(() => {
           </div> 
             <div class="flex items-center gap-1.5">
               <span class="text-stone-400 dark:text-stone-500">Returns:</span>
-              <span class="font-semibold text-stone-600 dark:text-stone-300">{{ product.returnPolicy }}</span>
+              <span class="font-semibold text-stone-600 dark:text-stone-300">{{ 'Fresh food items cannot be returned. Refund only if item is damaged or spoiled on delivery.' }}</span>
             </div>
           </div>
         </div>
